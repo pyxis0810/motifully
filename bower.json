@@ -1,0 +1,22 @@
+{
+  "name": "motifully",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "motifully@outlook.com"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/pyxis0810/motifully",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngInfiniteScroll": "1.0.0",
+    "susy": "^2.2.11"
+  }
+}
