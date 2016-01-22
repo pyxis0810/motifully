@@ -25,6 +25,7 @@
     "gulp-bower": "0.0.11",
     "gulp-compass": "^2.1.0",
     "gulp-csscomb": "^3.0.6",
+    "gulp-if": "^2.0.0",
     "gulp-minify-css": "^1.2.3",
     "gulp-nodemon": "^2.0.6",
     "gulp-ruby-sass": "^2.0.6",
@@ -32,7 +33,9 @@
     "gulp-sourcemap": "^1.0.1",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.1",
-    "gulp-webserver": "^0.9.1"
+    "gulp-webserver": "^0.9.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
     "angular": "^1.4.8",
@@ -46,5 +49,18 @@
     "serve-favicon": "^2.3.0",
     "woocommerce": "^2.0.0",
     "wordpress": "^1.1.2"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "jquery": "./src/components/jquery/dist/jquery.min.js"
+  },
+  "browserify-shim": {
+    "jquery": {
+      "exports": "$"
+    }
   }
 }

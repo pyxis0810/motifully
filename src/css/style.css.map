@@ -1,0 +1,1 @@
+{"version":3,"file":"style.css","sources":["style.sass","pages/_main.sass"],"sourcesContent":["@import \"pages/_main.sass\";\n\n/* Changing Susy default global settings */\n","body {\n  background: blue; }\n"],"mappings":"ACAA,IAAI,AAAC,CACH,UAAU,CAAE,IAAK,CAAG","names":[],"sourceRoot":"/source/"}

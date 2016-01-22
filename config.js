@@ -9,11 +9,11 @@ var root = './src/';
 var paths = {
     'html': root + '**/*.html',
     'sass': {
-        'src':  root + 'sass/**/*.{sass,scss}',
+        'src':  root + 'sass/*.{sass,scss}',
         'dest': root + 'css'
     },
     'browserify': {
-        'src':             [root + 'js/app.js', root+'js/routes.js'],
+        'src':             [root + 'js/app.js'],
         'watch_files':     [root + 'js/*.js', root + 'js/app/**/*.js'],
         'dest':            root + 'js/bundle/',
         'output_filename': 'app.js',
@@ -35,7 +35,10 @@ var options = {
         'debug':   paths.browserify.debugging
     },
     'browserSync': {
-        'server': './src'
+        proxy: "http://localhost:8000",
+        files: ["src/**/*.*"],
+        browser: "google chrome",
+        port: 3000
     }
 };
 
