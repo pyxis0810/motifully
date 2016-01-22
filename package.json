@@ -35,7 +35,13 @@
   },
   "dependencies": {
     "angular": "^1.4.8",
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.1",
+    "debug": "^2.2.0",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1",
     "node-sass": "^3.4.2",
+    "serve-favicon": "^2.3.0",
     "woocommerce": "^2.0.0",
     "wordpress": "^1.1.2"
   }
